@@ -6,8 +6,8 @@ class Checkout extends Controller{
 
     function __construct()
     {
-        $this->categories = $this->model("CategoriesModel");
-        $this->GetCategories = $this->categories -> GetCategories();
+        $this->products = $this->model("ProductsModel");
+        $this->GetProducts = $this->products -> GetProducts();
     }
 
     //Phải có Homeview
@@ -15,7 +15,7 @@ class Checkout extends Controller{
         $this->view("master1",[
             "Home"=> "Thanh Toán",
             "Page"=> "ShowCheckout",
-            "Categories"=>$this->GetCategories, 
+            "Products"=>$this->GetProducts, 
         ]);
     }
     

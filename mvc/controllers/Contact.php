@@ -6,8 +6,8 @@ class Contact extends Controller{
 
     function __construct()
     {
-        $this->categories = $this->model("CategoriesModel");
-        $this->GetCategories = $this->categories -> GetCategories();
+        $this->products = $this->model("ProductsModel");
+        $this->GetProducts = $this->products -> GetProducts();
     }
 
     //Phải có Homeview
@@ -18,7 +18,7 @@ class Contact extends Controller{
         $this->view("master1",[
             "Home"=> "Liên Hệ",
             "Page"=> "ShowContact",
-            "Categories"=>$this->GetCategories,
+            "Products"=>$this->GetProducts,
         ]);
     }
     

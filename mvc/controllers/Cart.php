@@ -6,8 +6,8 @@ class Cart extends Controller{
 
     function __construct()
     {
-        $this->categories = $this->model("CategoriesModel");
-        $this->GetCategories = $this->categories -> GetCategories();
+        $this->products = $this->model("ProductsModel");
+        $this->GetProducts = $this->products -> GetProducts();
     }
 
     //Phải có Homeview
@@ -15,7 +15,7 @@ class Cart extends Controller{
         $this->view("master1",[
             "Home"=> "Giỏ Hàng",
             "Page"=> "ShowCart",
-            "Categories"=>$this->GetCategories, 
+            "Products"=>$this->GetProducts, 
         ]);
     }
     

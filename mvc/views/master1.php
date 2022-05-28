@@ -74,7 +74,7 @@
             <nav class="amado-nav">
                 <ul>
                     <li class="active"><a href="Home">Trang Chủ</a></li>
-                    <li><a href="#">Sản Phẩm</a></li>
+                    <li><a href="Product">Sản Phẩm</a></li>
                     <li><a href="Cart">Giỏ Hàng</a></li>
                     <li><a href="Checkout">Thanh Toán</a></li>
                     <li><a href="Contact">Liên Hệ</a></li>

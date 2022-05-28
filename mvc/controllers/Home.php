@@ -3,11 +3,10 @@
 // http://localhost/live/Home
 
 class Home extends Controller{
-
     function __construct()
     {
-        $this->categories = $this->model("CategoriesModel");
-        $this->GetCategories = $this->categories -> GetCategories();
+        $this->products = $this->model("ProductsModel");
+        $this->GetProducts = $this->products -> GetProducts();
     }
 
     //Phải có Homeview
@@ -18,7 +17,7 @@ class Home extends Controller{
         $this->view("master1",[
             "Home"=> "Trang Chủ",
             "Page"=> "ShowHome",
-            "Categories"=>$this->GetCategories,
+            "Products"=>$this->GetProducts,
         ]);
     }
     
